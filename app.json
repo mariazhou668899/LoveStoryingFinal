@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "projectPrototype",
+    "slug": "projectPrototype",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.example.lovestoryingapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Swansea.ttf"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d71768ed-1815-4226-8a4d-785e16992839"
+      }
+    },
+    "owner": "panktiii"
+  }
+}
