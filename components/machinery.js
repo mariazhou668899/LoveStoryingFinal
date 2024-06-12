@@ -1,37 +1,3 @@
-//import { PDFDocument, rgb } from 'react-native-pdf-lib';
-//import { writeFile } from 'react-native-fs';
-
-export function createStoryPrompt(outline, numParagraph = 3, numSentences = 7, targetAudience = 12, genr = 'fiction story', numsentencewords = 20) {
-    return `
-    A ${genr} story about ${outline} for ${targetAudience}-year old kids with ending part. This story has ${numParagraph} paragraphs, this story has ${numSentences} sentences in its each paragraph, each sentence has less than ${numsentencewords} words. 
-
-    The story should be a little bit funny and in general written with a positive mood.
-    `;
-}
-
-export function createImagePrompt(story, imageType = 'illustration', numImg) {
-    return `
-Draw ${numImg} related ${imageType} for each paragraph of the following story: ${story}. 
-
-The general mood of the ${imageType} is positive.
-Do not write any text or speech or words into the ${imageType}.
-
-`;
-}
-
-export function createTitlePrompt(story) {
-    return `
-Formulate a very short title of the following story: ${story}.
-
-`;
-}
-
-export function createQuestions(story) {
-    return `
-Formulate 4 simple questions and its right answer for the following story: ${story}.
-
-`;
-}
 
 
 export async function packageStory(pdfFilename, title, paragraphs, imageURLs) {
